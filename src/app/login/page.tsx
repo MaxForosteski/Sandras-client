@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import LoginForm from "../../../public/components/login-form";
 
 export default function Login() {
     return (
@@ -7,7 +7,7 @@ export default function Login() {
             <div className="coluna-2 w-5/12 bg-neutral-50 h-screen">
                 <div className="flex flex-col justify-center items-center h-full">
                     <h1 className="text-4xl ">Login</h1>
-                    
+                    <LoginForm/>
                 </div>
             </div>
             <div className="coluna-1 w-7/12 h-screen">
