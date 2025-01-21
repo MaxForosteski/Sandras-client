@@ -12,7 +12,7 @@ interface InputProps {
     [key: string]: any;
 }
 
-const InputDefault: FC<InputProps> = ({
+const Input: FC<InputProps> = ({
     label,
     type = "text",
     name,
@@ -26,6 +26,7 @@ const InputDefault: FC<InputProps> = ({
     return (
         <div className={`input-container ${className}`}>
             {label && <label htmlFor={name} className="input-label">{label}</label>}
+            <br/>
             <input
                 type={type}
                 id={name}
@@ -40,3 +41,5 @@ const InputDefault: FC<InputProps> = ({
         </div>
     )
 };
+
+export default Input
